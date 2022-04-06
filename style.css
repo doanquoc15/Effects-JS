@@ -1,0 +1,53 @@
+*{
+    margin:0px;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color:black;
+}
+section .text{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    user-select: none;
+    pointer-events: none;
+    animation:  animate 7.5s linear infinite;
+}
+
+.text1{
+    position: absolute;
+    color: white;
+    animation: animation1 7.5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+section .text span{
+    position: absolute;
+    top: -100px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform-origin: 0px 100px;
+}
